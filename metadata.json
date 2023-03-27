@@ -1,9 +1,9 @@
 {
-    "Identifier": "",
-    "Slug": "",
-    "Status": "",
-    "Title": "",
-    "Description": "",
+    "Identifier": "eos31ve",
+    "Slug": "hlm",
+    "Status": "In progress",
+    "Title": "Human Liver Microsomal Stability",
+    "Description": "Prediction of human liver microsomal stability is key for the screening of drugs in the early stage of drug discovery. The liver is the main organ for metabolizing drugs in humans and testing its metabolic stability is essential for the early detection of viable drug compounds.",
     "Mode": "",
     "Task": [],
     "Input": [],
@@ -12,8 +12,12 @@
     "Output Type": [],
     "Output Shape": "",
     "Interpretation": "",
-    "Tag": [],
-    "Publication": "",
-    "Source Code": "",
-    "License": ""
+    "Tag": [
+        "hlm",
+        "liver",
+        "microsomal"
+    ],
+    "Publication": "https://pubmed.ncbi.nlm.nih.gov/17683964/",
+    "Source Code": "https://github.com/ncats/ncats-adme/tree/master",
+    "License": "MIT"
 }
