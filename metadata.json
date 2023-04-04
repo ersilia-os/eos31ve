@@ -8,7 +8,7 @@
     "Task": ["Classification"],
     "Input": ["Compound"],
     "Input Shape": "Single",
-    "Output": ["Stability"],
+    "Output": ["Probability"],
     "Output Type": ["Float"],
     "Output Shape": "Single",
     "Interpretation": "Probability of a compound being stable in HLM (half-life > 30min)",
