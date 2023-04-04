@@ -1,13 +1,11 @@
-# Rat liver microsomal stability
+# Human liver microsomal stability
 
-Prediction of human liver microsomal stability is key for the screening of drugs in the early stage of drug discovery. The liver is the main organ for metabolizing drugs in humans and testing its metabolic stability is essential for the early detection of viable drug compounds. Tge Human Liver Microsomal (HLM) stability is a good approximation of a compound's stability in the human body. NCATS has collected a dataset of 4300 compounds ((t1/2 <= 30 min; stable, t1/2 <= 30 min>t1/2 <= 30 min) and used to
-
-Hepatic metabolic stability is key to ensure the drug attains the desired concentration in the body. The Rat Liver Microsomal (RLM) stability is a good approximation of a compound’s stability in the human body, and NCATS has collected a proprietary dataset of 20216 compounds with its associated RLM (in vitro half-life; unstable < 30 min, stable >30 min) and used it to train a classifier based on an ensemble of several ML approaches (random forest, deep neural networks, graph convolutional neural networks and recurrent neural networks)
+Prediction of human liver microsomal stability is key for the screening of drugs in the early stage of drug discovery. The liver is the main organ for metabolizing drugs in humans and testing its metabolic stability is essential for the early detection of viable drug compounds. Tge Human Liver Microsomal (HLM) stability is a good approximation of a compound's stability in the human body. NCATS has collected a dataset of 4300 compounds ((t1/2 <= 30 min; unstable, t1/2 > 30 min; stable).
 
 ## Identifiers
 
 * EOS model ID: `eos31ve`
-* Slug: `ncats-rlm`
+* Slug: `ncats-hlm`
 
 ## Characteristics
 
