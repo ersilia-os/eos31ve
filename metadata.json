@@ -11,7 +11,7 @@
     "Output": ["Stability"],
     "Output Type": ["Float"],
     "Output Shape": "Single",
-    "Interpretation": "Probability of a compound being stable in HLM (half-life > 30min)"
+    "Interpretation": "Probability of a compound being stable in HLM (half-life > 30min)",
     "Tag": [
         "Metabolism",
         "ADME",
