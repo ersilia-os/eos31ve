@@ -71,4 +71,19 @@ with open(input_file, "r") as f:
 output_df = predict_df(smiles_list)
 print(output_df)
 
-output_df.to_csv(output_file, index=False)
+OUTPUT_COLUMN_NAME = "Predicted Class (Probability)"
+
+
+outputs = []
+for x in list(output_df[OUTPUT_COLUMN_NAME]):
+    c = x.split(" ")[0]
+    p = float(x.split("(")[1].split(")")[0])
+    outputs += [p]
+
+
+# write output in a .csv file
+with open(output_file, "w") as f:
+    writer = csv.writer(f)
+    writer.writerow(["proba1"]) # header
+    for o in outputs:
+        writer.writerow([o])

@@ -35,7 +35,7 @@ class HLMPredictor(GcnnBase):
         Parameters:
             kekule_smiles (Array): numpy array of RDkit molecules
         """
-        GcnnBase.__init__(self, kekule_smiles, column_dict_key='Stability', columns_dict_order = 1, smiles=smiles)
+        GcnnBase.__init__(self, kekule_smiles, column_dict_key='Predicted Class (Probability)', columns_dict_order = 1, smiles=smiles)
 
         # add RLM predictions as additional features along with SMILES
         rlm_predictions, rlm_labels = self.gcnn_predict(rlm_gcnn_model, rlm_gcnn_scaler)
