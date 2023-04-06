@@ -1,9 +1,9 @@
 # imports
 import os
-import pandas as pd
+
 import csv
 import sys
-
+import pandas as pd
 root = os.path.dirname(os.path.abspath(__file__))
 sys.path.append(os.path.join(root, ".."))
 
@@ -76,9 +76,12 @@ OUTPUT_COLUMN_NAME = "Predicted Class (Probability)"
 
 outputs = []
 for x in list(output_df[OUTPUT_COLUMN_NAME]):
-    c = x.split(" ")[0]
+    c = int(x.split(" ")[0])
     p = float(x.split("(")[1].split(")")[0])
-    outputs += [p]
+    if c == 1:
+        outputs += [p]
+    else:
+        outputs += [1-p]
 
 
 # write output in a .csv file
