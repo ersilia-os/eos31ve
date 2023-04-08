@@ -1,23 +1,25 @@
 {
     "Identifier": "eos31ve",
-    "Slug": "hlm",
-    "Status": "In progress",
+    "Slug": "ncats-hlm",
+    "Status": "Ready",
     "Title": "Human Liver Microsomal Stability",
-    "Description": "Prediction of human liver microsomal stability is key for the screening of drugs in the early stage of drug discovery. The liver is the main organ for metabolizing drugs in humans and testing its metabolic stability is essential for the early detection of viable drug compounds.",
-    "Mode": "",
-    "Task": [],
-    "Input": [],
-    "Input Shape": "",
-    "Output": [],
-    "Output Type": [],
-    "Output Shape": "",
-    "Interpretation": "",
+    "Description": "The Human Liver Microsomal assay takes into account the liver-mediated drug metabolism to assess the stability of a compound in the human body. The NIH-NCATS group took a proprietary dataset of 4300 compounds with its associated HLM (in vitro half-life; unstable ≤  30 min, stable >30 min) and used it to train a classifier.",
+    "Mode": "Pretrained",
+    "Task": ["Classification"],
+    "Input": ["Compound"],
+    "Input Shape": "Single",
+    "Output": ["Probability"],
+    "Output Type": ["Float"],
+    "Output Shape": "Single",
+    "Interpretation": "Probability of a compound being unstable in a HLM assay (half-life ≤ 30min)",
     "Tag": [
-        "hlm",
-        "liver",
-        "microsomal"
+        "Metabolism",
+        "ADME",
+        "Human",
+        "Microsomal stability",
+        "Half-life"
     ],
-    "Publication": "https://pubmed.ncbi.nlm.nih.gov/17683964/",
+    "Publication": "https://jcheminf.biomedcentral.com/articles/10.1186/s13321-020-00426-7",
     "Source Code": "https://github.com/ncats/ncats-adme/tree/master",
-    "License": "MIT"
+    "License": "None"
 }

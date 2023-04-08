@@ -2,21 +2,31 @@
 import os
 import csv
 import sys
+import pandas as pd
+import numpy as np
 from rdkit import Chem
-from rdkit.Chem.Descriptors import MolWt
 
-# parse arguments
+root = os.path.dirname(os.path.abspath(__file__))
+sys.path.append(os.path.join(root, ".."))
+
+from predictors.hlm.hlm_predictor import HLMPredictior 
+
 input_file = sys.argv[1]
 output_file = sys.argv[2]
 
-# current file directory
-root = os.path.dirname(os.path.abspath(__file__))
-
-# my model
 def my_model(smiles_list):
-    return [MolWt(Chem.MolFromSmiles(smi)) for smi in smiles_list]
-
-
+    mols = [Chem.MolFromSmiles(smi) for smi in smiles_list]
+    kek_mols = []
+    for mol in mols:
+        if mol is not None:
+            Chem.Kekulize(mol)
+        kek_mols += [mol]
+    kek_smiles = [Chem.MolToSmiles(mol,kekuleSmiles=True) for mol in kek_mols]
+    predictor = HLMPredictior(kekule_smiles = np.asarray(kek_smiles), smiles = np.asarray(smiles_list))
+    pred_df = predictor.get_predictions()
+    
+    return pred_df
+      
 # read SMILES from .csv file, assuming one column with header
 with open(input_file, "r") as f:
     reader = csv.reader(f)
@@ -24,11 +34,5 @@ with open(input_file, "r") as f:
     smiles_list = [r[0] for r in reader]
 
 # run model
-outputs = my_model(smiles_list)
-
-# write output in a .csv file
-with open(output_file, "w") as f:
-    writer = csv.writer(f)
-    writer.writerow(["value"])  # header
-    for o in outputs:
-        writer.writerow([o])
+output_df = my_model(smiles_list)
+output_df.to_csv(output_file, index=False)
