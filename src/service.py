@@ -88,15 +88,14 @@ class Model(object):
             reader = csv.reader(f)
             h = next(reader)
             R = []
-            for r in reader:
+            for r in reader: 
                 R += [
-                    {"outcome": [Float(x) for x in r]}
-                ]  # <-- EDIT: Modify according to type of output (Float, String...)
-        meta = {"outcome": h}
+                    {"hlm_proba1": Float(r[0])}
+                ]   
+        meta = {"hlm_proba1": h}
         result = {"result": R, "meta": meta}
         shutil.rmtree(tmp_folder)
         return result
-
 
 class Artifact(BentoServiceArtifact):
     def __init__(self, name):
