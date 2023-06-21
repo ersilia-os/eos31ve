@@ -25,6 +25,8 @@ The Human Liver Microsomal assay takes into account the liver-mediated drug meta
 
 ## Ersilia model URLs
 * [GitHub](https://github.com/ersilia-os/eos31ve)
+* [AWS S3](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos31ve.zip)
+* [DockerHub](https://hub.docker.com/r/ersiliaos/eos31ve) (AMD64)
 
 ## Citation
 
