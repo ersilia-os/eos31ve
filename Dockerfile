@@ -11,6 +11,7 @@ RUN pip install typed-argument-parser==1.8.0
 RUN pip install tensorboardX==2.6
 RUN pip install scikit-learn==0.22
 RUN pip install hyperopt==0.2.7
+RUN conda install -c conda-forge xorg-libxrender xorg-libxtst
 
 WORKDIR /repo
 COPY . /repo
