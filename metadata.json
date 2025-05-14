@@ -3,22 +3,26 @@
     "Slug": "ncats-hlm",
     "Status": "Ready",
     "Title": "Human Liver Microsomal Stability",
-    "Description": "The Human Liver Microsomal assay takes into account the liver-mediated drug metabolism to assess the stability of a compound in the human body. The NIH-NCATS group took a proprietary dataset of 4300 compounds with its associated HLM (in vitro half-life; unstable \u2264\u2009 30 min, stable >30 min) and used it to train a classifier.",
-    "Mode": "Pretrained",
-    "Task": [
-        "Classification"
-    ],
+    "Description": "The Human Liver Microsomal assay takes into account the liver-mediated drug metabolism to assess the stability of a compound in the human body. The NIH-NCATS group took a proprietary dataset of 4300 compounds with its associated HLM (in vitro half-life; unstable \u2264\u2009 30 min, stable >30 min) and used it to train a classifier.\n",
+    "Source": "Local",
+    "Source Type": "External",
     "Input": [
         "Compound"
     ],
-    "Input Shape": "Single",
+    "Input Dimension": 1,
+    "Task": "Annotation",
+    "Subtask": "Activity prediction",
+    "Biomedical Area": [
+        "ADMET"
+    ],
+    "Target Organism": [
+        "Homo sapiens"
+    ],
     "Output": [
         "Probability"
     ],
-    "Output Type": [
-        "Float"
-    ],
-    "Output Shape": "Single",
+    "Output Dimension": 1,
+    "Output Consistency": "Fixed",
     "Interpretation": "Probability of a compound being unstable in a HLM assay (half-life \u2264 30min)",
     "Tag": [
         "Metabolism",
@@ -28,11 +32,18 @@
         "Half-life"
     ],
     "Publication": "https://jcheminf.biomedcentral.com/articles/10.1186/s13321-020-00426-7",
+    "Publication Type": "Peer reviewed",
+    "Publication Year": 2020,
     "Source Code": "https://github.com/ncats/ncats-adme/tree/master",
     "License": "None",
-    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos31ve.zip",
+    "Contributor": "pauline-banye",
+    "Incorporation Date": "2023-03-27",
     "DockerHub": "https://hub.docker.com/r/ersiliaos/eos31ve",
     "Docker Architecture": [
         "AMD64"
+    ],
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos31ve.zip",
+    "Deployment": [
+        "Local"
     ]
 }
