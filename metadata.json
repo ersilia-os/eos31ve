@@ -41,6 +41,8 @@
     "License": "None",
     "Contributor": "pauline-banye",
     "Incorporation Date": "2023-03-27",
+    "Last Packaging Date": "2025-10-16",
+    "Release": "v1.0.0",
     "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos31ve.zip",
     "DockerHub": "https://hub.docker.com/r/ersiliaos/eos31ve",
     "Docker Architecture": [
@@ -49,10 +51,10 @@
     ],
     "Model Size": 85.0,
     "Environment Size": 2461.0,
-    "Image Size": 2514.47,
-    "Computational Performance 1": 33.94,
-    "Computational Performance 2": 23.7,
-    "Computational Performance 3": 25.15,
-    "Computational Performance 4": 110.45,
-    "Computational Performance 5": 497.19
+    "Image Size": 2596.84,
+    "Computational Performance 1": 28.97,
+    "Computational Performance 2": 18.63,
+    "Computational Performance 3": 19.09,
+    "Computational Performance 4": 38.76,
+    "Computational Performance 5": 127.17
 }
