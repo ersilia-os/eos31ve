@@ -2,8 +2,7 @@
 
 The Human Liver Microsomal assay takes into account the liver-mediated drug metabolism to assess the stability of a compound in the human body. The NIH-NCATS group took a proprietary dataset of 4300 compounds with its associated HLM (in vitro half-life; unstable ≤  30 min, stable >30 min) and used it to train a classifier.
 
-This model was incorporated on 2023-03-27.
-
+This model was incorporated on 2023-03-27.Last packaged on 2025-10-16.
 
 ## Information
 ### Identifiers
@@ -42,12 +41,12 @@ Below are the **Output Columns** of the model:
 ### Resource Consumption
 - **Model Size (Mb):** `85`
 - **Environment Size (Mb):** `2461`
-- **Image Size (Mb):** `2514.47`
+- **Image Size (Mb):** `2596.84`
 
 **Computational Performance (seconds):**
-- 10 inputs: `33.94`
-- 100 inputs: `25.15`
-- 10000 inputs: `497.19`
+- 10 inputs: `28.97`
+- 100 inputs: `19.09`
+- 10000 inputs: `127.17`
 
 ### References
 - **Source Code**: [https://github.com/ncats/ncats-adme/tree/master](https://github.com/ncats/ncats-adme/tree/master)
