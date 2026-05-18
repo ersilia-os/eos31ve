@@ -50,7 +50,7 @@ Below are the **Output Columns** of the model:
 
 ### References
 - **Source Code**: [https://github.com/ncats/ncats-adme/tree/master](https://github.com/ncats/ncats-adme/tree/master)
-- **Publication**: [https://jcheminf.biomedcentral.com/articles/10.1186/s13321-020-00426-7](https://jcheminf.biomedcentral.com/articles/10.1186/s13321-020-00426-7)
+- **Publication**: [https://doi.org/10.1186/s13321-020-00426-7](https://doi.org/10.1186/s13321-020-00426-7)
 - **Publication Type:** `Peer reviewed`
 - **Publication Year:** `2020`
 - **Ersilia Contributor:** [pauline-banye](https://github.com/pauline-banye)
