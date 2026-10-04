@@ -1,6 +1,6 @@
 # Human Liver Microsomal Stability
 
-The Human Liver Microsomal assay takes into account the liver-mediated drug metabolism to assess the stability of a compound in the human body. The NIH-NCATS group took a proprietary dataset of 4300 compounds with its associated HLM (in vitro half-life; unstable ≤  30 min, stable >30 min) and used it to train a classifier.
+Indicates whether a compound is likely to be cleared rapidly by human liver microsomes, the fraction carrying cytochrome P450 activity and the usual first checkpoint for metabolic stability. Compounds falling below a 30-minute half-life are treated as unstable. The predictor comes from NCATS work on liver-mediated metabolism, where in-house half-life measurements were paired with matched molecular pair analysis to extract structural transformations that shift stability. Microsomal assays omit cytosolic and phase II routes entirely.
 
 This model was incorporated on 2023-03-27.Last packaged on 2025-10-16.
 
@@ -23,7 +23,7 @@ This model was incorporated on 2023-03-27.Last packaged on 2025-10-16.
 ### Output
 - **Output Dimension:** `1`
 - **Output Consistency:** `Fixed`
-- **Interpretation:** Probability of a compound being unstable in a HLM assay (half-life ≤ 30min)
+- **Interpretation:** Probability that a compound is unstable in human liver microsomes, with instability set at a half-life under 30 minutes.
 
 Below are the **Output Columns** of the model:
 | Name | Type | Direction | Description |
