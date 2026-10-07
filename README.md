@@ -1,6 +1,6 @@
 # Human Liver Microsomal Stability
 
-Indicates whether a compound is likely to be cleared rapidly by human liver microsomes, the fraction carrying cytochrome P450 activity and the usual first checkpoint for metabolic stability. Compounds falling below a 30-minute half-life are treated as unstable. The predictor comes from NCATS work on liver-mediated metabolism, where in-house half-life measurements were paired with matched molecular pair analysis to extract structural transformations that shift stability. Microsomal assays omit cytosolic and phase II routes entirely.
+Indicates whether a compound is likely to be cleared rapidly by human liver microsomes, the subcellular fraction carrying cytochrome P450 activity and the usual first checkpoint for metabolic stability. Compounds with a half-life at or below 30 minutes count as unstable. The classifier is one of the ADME@NCATS predictors, built from an in-house NCATS collection of roughly 4,300 compounds with measured microsomal half-lives. Microsomes carry phase I oxidation only, so cytosolic enzymes and conjugative routes stay invisible to this endpoint.
 
 This model was incorporated on 2023-03-27.Last packaged on 2025-10-16.
 
@@ -23,7 +23,7 @@ This model was incorporated on 2023-03-27.Last packaged on 2025-10-16.
 ### Output
 - **Output Dimension:** `1`
 - **Output Consistency:** `Fixed`
-- **Interpretation:** Probability that a compound is unstable in human liver microsomes, with instability set at a half-life under 30 minutes.
+- **Interpretation:** Probability that a compound is unstable in human liver microsomes, meaning a half-life of 30 minutes or less.
 
 Below are the **Output Columns** of the model:
 | Name | Type | Direction | Description |
