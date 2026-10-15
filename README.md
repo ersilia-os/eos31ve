@@ -50,9 +50,9 @@ Below are the **Output Columns** of the model:
 
 ### References
 - **Source Code**: [https://github.com/ncats/ncats-adme/tree/master](https://github.com/ncats/ncats-adme/tree/master)
-- **Publication**: [https://doi.org/10.1186/s13321-020-00426-7](https://doi.org/10.1186/s13321-020-00426-7)
+- **Publication**: [https://doi.org/10.3390/pharmaceutics16101257](https://doi.org/10.3390/pharmaceutics16101257)
 - **Publication Type:** `Peer reviewed`
-- **Publication Year:** `2020`
+- **Publication Year:** `2024`
 - **Ersilia Contributor:** [pauline-banye](https://github.com/pauline-banye)
 
 ### License
