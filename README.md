@@ -2,7 +2,7 @@
 
 Indicates whether a compound is likely to be cleared rapidly by human liver microsomes, the usual first checkpoint for metabolic stability; a half-life at or below 30 minutes counts as unstable. This is the earlier ADME@NCATS classifier (2022): a graph neural network that takes a rat microsomal prediction as an extra input, trained on roughly 4,300 in-house NCATS compounds. The cited 2024 paper benchmarks this approach on a larger dataset and describes its XGBoost successor. Microsomes carry phase I oxidation only, so cytosolic and conjugative routes stay invisible.
 
-This model was incorporated on 2023-03-27.Last packaged on 2025-10-16.
+This model was incorporated on 2023-03-27.Last packaged on 2026-10-15.
 
 ## Information
 ### Identifiers
@@ -41,12 +41,12 @@ Below are the **Output Columns** of the model:
 ### Resource Consumption
 - **Model Size (Mb):** `85`
 - **Environment Size (Mb):** `2443`
-- **Image Size (Mb):** `2596.84`
+- **Image Size (Mb):** `2627.91`
 
 **Computational Performance (seconds):**
-- 10 inputs: `28.97`
-- 100 inputs: `19.09`
-- 10000 inputs: `127.17`
+- 10 inputs: `29.66`
+- 100 inputs: `13.77`
+- 10000 inputs: `86.53`
 
 ### References
 - **Source Code**: [https://github.com/ncats/ncats-adme/tree/master](https://github.com/ncats/ncats-adme/tree/master)
