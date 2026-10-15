@@ -3,7 +3,7 @@
     "Slug": "ncats-hlm",
     "Status": "Ready",
     "Title": "Human Liver Microsomal Stability",
-    "Description": "Indicates whether a compound is likely to be cleared rapidly by human liver microsomes, the subcellular fraction carrying cytochrome P450 activity and the usual first checkpoint for metabolic stability. Compounds with a half-life at or below 30 minutes count as unstable. The classifier is one of the ADME@NCATS predictors, built from an in-house NCATS collection of roughly 4,300 compounds with measured microsomal half-lives. Microsomes carry phase I oxidation only, so cytosolic enzymes and conjugative routes stay invisible to this endpoint.",
+    "Description": "Indicates whether a compound is likely to be cleared rapidly by human liver microsomes, the usual first checkpoint for metabolic stability; a half-life at or below 30 minutes counts as unstable. This is the earlier ADME@NCATS classifier (2022): a graph neural network that takes a rat microsomal prediction as an extra input, trained on roughly 4,300 in-house NCATS compounds. The cited 2024 paper benchmarks this approach on a larger dataset and describes its XGBoost successor. Microsomes carry phase I oxidation only, so cytosolic and conjugative routes stay invisible.",
     "Deployment": [
         "Local"
     ],
