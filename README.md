@@ -2,7 +2,8 @@
 
 Indicates whether a compound is likely to be cleared rapidly by human liver microsomes, the usual first checkpoint for metabolic stability; a half-life at or below 30 minutes counts as unstable. This is the earlier ADME@NCATS classifier (2022): a graph neural network that takes a rat microsomal prediction as an extra input, trained on roughly 4,300 in-house NCATS compounds. The cited 2024 paper benchmarks this approach on a larger dataset and describes its XGBoost successor. Microsomes carry phase I oxidation only, so cytosolic and conjugative routes stay invisible.
 
-This model was incorporated on 2023-03-27.Last packaged on 2026-10-15.
+This model was incorporated on 2023-03-27.
+Last packaged on 2026-10-15.
 
 ## Information
 ### Identifiers
@@ -37,6 +38,7 @@ Below are the **Output Columns** of the model:
 - **DockerHub**: [https://hub.docker.com/r/ersiliaos/eos31ve](https://hub.docker.com/r/ersiliaos/eos31ve)
 - **Docker Architecture:** `AMD64`, `ARM64`
 - **S3 Storage**: [https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos31ve.zip](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos31ve.zip)
+- **Apptainer**: [https://models-sif.s3.eu-north-1.amazonaws.com/eos31ve_v1.sif](https://models-sif.s3.eu-north-1.amazonaws.com/eos31ve_v1.sif)
 
 ### Resource Consumption
 - **Model Size (Mb):** `85`
